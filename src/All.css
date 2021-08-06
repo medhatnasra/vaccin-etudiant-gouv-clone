@@ -1,0 +1,205 @@
+:root {
+  --primary-color: #d9534f;
+  --title-color: #212529;
+  --label-color: #71818c;
+  --anchor-color: #4a9bcc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Droid Arabic kufi";
+  font-weight: 400;
+  src: url(./font/droid-arabic/ArbFONTS-DroidKufi-Regular.ttf);
+}
+@font-face {
+  font-family: "Droid Arabic kufi";
+  font-weight: 700;
+  src: url(./font/droid-arabic/ArbFONTS-DroidKufi-Bold.ttf);
+}
+
+body {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Droid Arabic Kufi";
+  background: #f7f9fb;
+  overflow-x: hidden;
+}
+
+header {
+  width: 75%;
+  margin: auto;
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--title-color);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header .tunisie {
+  height: 70px;
+  margin: auto;
+}
+
+header .logo {
+  width: 50px;
+  margin: auto;
+}
+
+header .header-text h3 {
+  text-align: center;
+  font-weight: 400;
+}
+header .header-text h2 {
+  font-weight: 300;
+
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.container .welcome-container {
+  width: 1140px;
+  height: 455px;
+}
+.container .welcome-container .part1 {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 2.5rem;
+}
+.container .welcome-container .welcome-text {
+  width: 100%;
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  color: white;
+  padding: 1.5rem;
+  padding-right: 3rem;
+}
+.container .welcome-container .welcome-text > * {
+  margin-block: 1rem;
+}
+
+.container .welcome-container .welcome-text > h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.container .welcome-container .welcome-text > h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.welcome-text button {
+  width: 99%;
+  margin: auto;
+  height: 43px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.welcome-text button a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.register-page {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 1140px;
+  margin-top: 1rem;
+  min-height: 800px;
+  box-shadow: 0px 20px 150px #d6dee4;
+}
+
+.form-container .part1 {
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+}
+.form-container .part1 h1 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  min-height: 900px;
+  padding: 2rem;
+}
+
+form input,
+select {
+  width: 100%;
+  height: 35px;
+}
+
+.form-container form label {
+  display: block;
+  color: var(--label-color);
+  font-size: 0.9rem;
+  margin-block: 0.5rem;
+}
+.form-container form button {
+  margin-top: 30px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px #2f3234;
+}
+
+.form-container a {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  color: var(--anchor-color);
+}
+
+.form-container form .confirm {
+  margin-block: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+
